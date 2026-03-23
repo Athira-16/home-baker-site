@@ -14,7 +14,7 @@ built with HTML, CSS, and JavaScript.
 ## 🛠️ Built With
 - HTML5
 - CSS3
-- JavaScript (Vanilla)
+- JavaScript
 
 ## 🚀 Getting Started
 Clone the repo and open `baker.html` in your browser.
