@@ -1,0 +1,329 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(248, 238, 226);
+  height: auto;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  /* margin-left: 20px; */
+  font-size: 10x;
+  color: rgb(69, 43, 7);
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 60px;
+}
+
+.nav-links {
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links nav {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.hero-content img {
+  width: 10%;
+  height: 20%;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 40px;
+  background-color: rgb(248, 238, 226);
+  color: rgb(69, 43, 7);
+  padding-bottom: 20px;
+}
+.hero-content h2 {
+  margin: 0px;
+}
+.hero-content p {
+  font-size: 18px;
+  text-wrap: wrap;
+}
+
+.hero-content button {
+  background-color: rgba(211, 146, 111, 0.951);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 150px;
+}
+
+.story-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 20px;
+  background-color: rgb(255, 250, 240);
+}
+.our-story {
+  font-size: 16px;
+  color: rgb(211, 146, 111);
+  margin: 0;
+}
+
+.story-count {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.story-count span {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(240, 190, 137);
+}
+.story-image {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 30px;
+  box-shadow: 2px 2px 10px rgb(240, 190, 137);
+}
+
+.offer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(248, 238, 226);
+  padding: 20px;
+}
+
+.offer-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.offer-grid div {
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgb(211, 146, 111);
+  flex: 0 0 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offer-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.offer-header p {
+  font-size: 16px;
+  color: rgb(211, 146, 111);
+  margin: 0;
+}
+
+.offer-header h2 {
+  font-size: 24px;
+  color: rgb(69, 43, 7);
+  margin: 10px;
+}
+
+.offer-grid div p {
+  padding: 5px;
+  font-size: 16px;
+  color: rgb(69, 43, 7);
+  text-align: center;
+}
+
+.offer-grid div h3 {
+  margin-bottom: 0px;
+  font-size: 20px;
+  color: rgb(69, 43, 7);
+  text-align: center;
+}
+
+.offer-grid div img {
+  object-fit: contain;
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  border-radius: 100px;
+  /* background-color: rgb(211, 146, 111); */
+}
+
+.offer-grid div h4 {
+  margin-top: 0px;
+  font-size: 16px;
+  color: rgb(197, 147, 76);
+  text-align: center;
+}
+
+.testimonial-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 250, 240);
+  padding: 20px;
+}
+
+.testimonial-section div {
+  text-align: center;
+  max-width: 600px;
+}
+.testimonial-section div h4 {
+  color: rgb(211, 146, 111);
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.testimonial-section div h2 {
+  color: rgb(69, 43, 7);
+  font-weight: bolder;
+  font-size: 24px;
+}
+
+.testimonial-section div p {
+  color: rgb(69, 43, 7);
+  font-weight: light;
+  font-size: 24px;
+  font-style: italic;
+}
+
+.testimonial-section div span {
+  color: rgb(69, 43, 7);
+  font-weight: bolder;
+  margin-top: 10px;
+}
+.testimonial-section div span:last-child {
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(248, 238, 226);
+}
+
+.contact-section div h4 {
+  text-align: center;
+  color: rgb(211, 146, 111);
+  font-weight: lighter;
+  font-size: 16px;
+}
+.contact-section div h2 {
+  text-align: center;
+  color: rgb(69, 43, 7);
+  font-weight: bolder;
+  font-size: 28px;
+}
+.contact-section div p {
+  text-align: center;
+  color: rgb(69, 43, 7);
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 250, 240);
+  border-radius: 20px;
+  height: 300px;
+  margin-bottom: 10px;
+  padding: 0px;
+  width: 400px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field input,
+.field textarea {
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(248, 238, 226);
+  margin-bottom: 10px;
+}
+
+.contact-form button {
+  background-color: rgba(211, 146, 111, 0.951);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 150px;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(255, 250, 240);
+  padding: 10px;
+  gap: 40px;
+}
+
+.info-section div h3 {
+  color: rgb(69, 43, 7);
+  font-weight: bolder;
+  font-size: 18px;
+  text-align: center;
+  margin: 5px;
+}
+
+.info-section div p {
+  color: rgb(69, 43, 7);
+  font-weight: lighter;
+  font-size: 14px;
+  text-align: center;
+  margin: 0px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(69, 43, 7);
+  padding: 20px;
+  color: rgb(211, 146, 111);
+}
+
+.footer h3 {
+  margin: 5px;
+  color: rgb(255, 250, 240);
+}
+
+.footer p {
+  margin: 2px;
+}
