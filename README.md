@@ -20,7 +20,7 @@
 
 The page is designed to help a small bakery establish an online presence: presenting their menu, telling their story, and making it easy for customers to get in touch.
 
-> 🔗 **Live Demo:** _(add your deployed link here)_ &nbsp;|&nbsp; 📂 **Repo:** [github.com/athira-16](https://github.com/athira-16)
+> 🔗 **Live Demo:** [Sweet Delights](https://home-baker-site.vercel.app/) __ &nbsp;|&nbsp; 📂 **Repo:** [github.com/athira-16](https://github.com/athira-16)
 
 ---
 
