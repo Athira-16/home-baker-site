@@ -126,7 +126,7 @@ This project can be deployed to any static hosting service:
 
 - **GitHub Pages** — push to a `gh-pages` branch or enable Pages in repo settings
 - **Vercel** — import the repo and deploy in one click (no build command needed)
-- **Netlify** — drag and drop the project folder into Netlify's dashboard
+
 
 ---
 
