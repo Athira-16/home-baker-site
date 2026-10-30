@@ -16,11 +16,11 @@
 
 ## 📌 Overview
 
-**Home Baker** is a fully responsive landing page designed for a home-based bakery business. Built with vanilla **HTML5, CSS3, and JavaScript** — no frameworks, no dependencies — it showcases how clean front-end fundamentals can deliver a warm, professional, and visually appealing product page.
+**Home Baker** is a fully responsive landing page designed for a home-based bakery business. Built with vanilla **HTML5, CSS3, and JavaScript** — no frameworks or build tools — it showcases how clean front-end fundamentals can deliver a warm, professional, and visually appealing product page.
 
 The page is designed to help a small bakery establish an online presence: presenting their menu, telling their story, and making it easy for customers to get in touch.
 
-> 🔗 **Live Demo:** [Sweet Delights](https://home-baker-site.vercel.app/) __ &nbsp;|&nbsp; 📂 **Repo:** [github.com/athira-16](https://github.com/athira-16)
+> 🔗 **Live Demo:** [Sweet Delights](https://home-baker-site.vercel.app/) \_\_ &nbsp;|&nbsp; 📂 **Repo:** [github.com/athira-16](https://github.com/athira-16)
 
 ---
 
@@ -37,46 +37,71 @@ The page is designed to help a small bakery establish an online presence: presen
 ## ✨ Features
 
 ### 🎨 Warm, Inviting Design
+
 - Carefully chosen colour palette and typography to reflect a cosy, artisan bakery feel
 - Smooth scroll navigation and subtle hover effects for a polished user experience
 
 ### 📱 Fully Responsive
+
 - Mobile-first layout that adapts seamlessly across all screen sizes — phones, tablets, and desktops
 - Flexible grid and media queries built entirely in CSS3
 
+### 📱 Responsive
+
+- Layout that adapts across screen sizes — phones, tablets, and desktops
+- Flexbox layout and media queries built entirely in CSS3
+
+### ♿ Accessibility & SEO
+
+- Semantic landmarks (`header`, `nav`, `main`, `footer`), a skip link, and visible keyboard focus states
+- Descriptive alt text, labelled form fields, and text colours that meet WCAG AA contrast
+- Page title, meta description, and Open Graph tags for link previews
+
 ### 🍰 Menu / Product Showcase
+
 - Dedicated section to display bakery items with images, names, and descriptions
 - Clean card-based layout for easy browsing
 
 ### 📬 Contact Section
+
 - Simple, accessible contact form for customer enquiries
 - Includes social links and location/availability details
+- Simple, accessible contact form for customer enquiries, sending email through [EmailJS](https://www.emailjs.com/) with inline success and error messages
+- Includes social handles and location/availability details
 
 ### ⚡ Lightweight & Fast
+
 - Zero dependencies — pure HTML, CSS, and JavaScript
+- No frameworks — pure HTML, CSS, and JavaScript (the only external script is EmailJS for the contact form)
+- Optimised images (WebP hero image, resized photos, lazy loading below the fold)
 - No build tools or bundlers required; works by simply opening a file in a browser
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Technology | Purpose |
-|---|---|
-| **HTML5** | Page structure and semantic markup |
-| **CSS3** | Styling, layout (Flexbox/Grid), animations, responsive design |
-| **JavaScript** | Interactive elements, smooth scroll, mobile nav toggle |
+| Technology     | Purpose                                                                         |
+| -------------- | ------------------------------------------------------------------------------- |
+| **HTML5**      | Page structure and semantic markup                                              |
+| **CSS3**       | Styling, layout (Flexbox/Grid), animations, responsive design                   |
+| **JavaScript** | Interactive elements, smooth scroll, mobile nav toggle                          |
+| Technology     | Purpose                                                                         |
+| ---            | ---                                                                             |
+| **HTML5**      | Page structure and semantic markup                                              |
+| **CSS3**       | Styling, Flexbox layout, hover transitions, smooth scrolling, responsive design |
+| **JavaScript** | Contact form validation and submission                                          |
+| **EmailJS**    | Sends contact form messages by email, with no backend                           |
 
 ---
 
 ## 📁 Project Structure
 
 ```
-home-baker/
-├── baker.html          # Main HTML file (entry point)
-├── style.css           # All styles and responsive rules
-├── script.js           # JavaScript interactions
-└── assets/
-    └── images/         # Bakery product and background images
+home-baker-site/
+├── index.html          # Main HTML file (entry point)
+├── baker.css           # All styles and responsive rules
+├── baker.js            # Contact form logic (EmailJS)
+└── images/             # Bakery product and background images
 ```
 
 ---
@@ -88,8 +113,8 @@ No installation or build step needed — this is a pure front-end project.
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/athira-16/home-baker.git
-cd home-baker
+git clone https://github.com/athira-16/home-baker-site.git
+cd home-baker-site
 ```
 
 ### 2. Open in Browser
@@ -98,12 +123,12 @@ Simply open the main file in any modern browser:
 
 ```bash
 # On macOS
-open baker.html
+open index.html
 
 # On Windows
-start baker.html
+start index.html
 
-# Or drag and drop baker.html into your browser
+# Or drag and drop index.html into your browser
 ```
 
 That's it — no `npm install`, no servers, no config.
@@ -112,10 +137,11 @@ That's it — no `npm install`, no servers, no config.
 
 ## 🎯 What I Learned / Key Highlights
 
-- Building a **fully responsive layout** without any CSS framework (Bootstrap, Tailwind, etc.)
-- Applying **CSS Flexbox and Grid** together to create complex, adaptive page sections
-- Writing clean, semantic **HTML5** for accessibility and readability
-- Using **vanilla JavaScript** for UI interactions (mobile nav toggle, smooth scroll behaviour)
+- Building a **responsive layout** without any CSS framework (Bootstrap, Tailwind, etc.)
+- Using **CSS Flexbox** and media queries to create adaptive page sections
+- Writing clean, semantic **HTML5** for accessibility and readability, and checking colour contrast against WCAG AA
+- Using **vanilla JavaScript** with **EmailJS** to handle a contact form without a backend
+- Optimising images (WebP, resizing, lazy loading) to keep the page fast
 - Designing with a consistent visual identity — colour, spacing, and typography — from scratch
 
 ---
@@ -127,7 +153,6 @@ This project can be deployed to any static hosting service:
 - **GitHub Pages** — push to a `gh-pages` branch or enable Pages in repo settings
 - **Vercel** — import the repo and deploy in one click (no build command needed)
 
-
 ---
 
 ## 🧑‍💻 Author
@@ -138,12 +163,6 @@ Full Stack Developer | Perth, WA, Australia
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit-4F46E5?style=flat-square)](https://athira-portfolio-site.vercel.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/athirarajagopalan)
 [![GitHub](https://img.shields.io/badge/GitHub-athira--16-181717?style=flat-square&logo=github)](https://github.com/athira-16)
-
----
-
-## 📄 License
-
-This project is open source and available under the [MIT License](./LICENSE).
 
 ---
 
